@@ -7,14 +7,15 @@ import sys
 import glob
 from datetime import time,date, timedelta
 
-if sys.platform != 'win32':
-    is_linux = True
 
 #defaults
 LIST_FILENAME = "files.txt"
 NIGHT_START = 20
 NIGHT_END = 6
 is_linux = False
+
+if sys.platform != 'win32':
+    is_linux = True
 
 if is_linux:
     MENCODER_LOCATION = "mencoder"
